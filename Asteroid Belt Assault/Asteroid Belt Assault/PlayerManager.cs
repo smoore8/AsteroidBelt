@@ -20,8 +20,8 @@ namespace Asteroid_Belt_Assault
 
         private Vector2 gunOffset = new Vector2(25, 10);
         private float shotTimer = 0.0f;
-        private float minShotTimer = 0.2f;
-        private int playerRadius = 15;
+        private float minShotTimer = 0.0f;
+        private int playerRadius = 10;
         public ShotManager PlayerShotManager;
 
         public PlayerManager(
@@ -71,7 +71,7 @@ namespace Asteroid_Belt_Assault
                     playerSprite.Location + gunOffset,
                     new Vector2(0, -1),
                     true);
-                shotTimer = 0.0f;
+                shotTimer = 1.5f;
             }
         }
 
